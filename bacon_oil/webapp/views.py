@@ -25,12 +25,12 @@ def home(request):
     """
     return render_to_response('index.html', {}, RequestContext(request))
 
-def about(request):
+def story(request):
     """
-    Controler for handeling the about page
+    Controler for handeling the story page
     """
 
-    return render_to_response('about.html', {}, RequestContext(request))
+    return render_to_response('story.html', {}, RequestContext(request))
 
 def contact(request):
     """
@@ -38,3 +38,10 @@ def contact(request):
     """
 
     return render_to_response('contact.html', {}, RequestContext(request))
+
+def safety(request):
+    """
+    Controler for handleing the safety page
+    """
+
+    return render_to_response('safety.html', {}, RequestContext(request))

@@ -1,40 +1,38 @@
 {% extends "base.html" %}
+{% load staticfiles %}
 
 {% block body %}
-	 <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+ <!-- Main jumbotron for a primary marketing message or call to action --> 
+  <div class="jumbotron" style="background-image: url({% static 'images/fried_chicken.jpg' %}); width-max:1000px; height-max:720px">
+    <div class="container">
+      <div class="well well-sm" style="background-color: rgba(0, 0, 0, 0.6);">
+        <h2 style="color:#FFFFFF">Welcome to Uncle John's Bacon Oil</h2>
+        <p style="color:#FFFFFF">Bacon oil is hands down the best way to enjoy any sort of fried food.  Explore our site to learn more about what makes our bacon oil special.  View our recipies to learn about the many different types of uses bacon oil can have.</p>
+      </div>
+      <p><a class="btn btn-primary btn-lg" href="/story" role="button" padding="20px">Learn more &raquo;</a></p>
+      
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+      <div class="col-md-4">
+        <h2>Learn about our product</h2>
+        <p>Uncle John's bacon oil is the most high quality bacon oil you can find.  Learn why our oil is so pure and why it is the best option to cook with. </p>
+        <p><a class="btn btn-default" href="/story" role="button">View our story &raquo;</a></p>
+      </div>
+      <div class="col-md-4">
+        <h2>Safety Tips</h2>
+        <p>Cooking with bacon oil is safe and easy!  Come learn about several tips to remain safe while cooking</p>
+        <p><a class="btn btn-default" href="/safety" role="button">Safety tips &raquo;</a></p>
+     </div>
+      <div class="col-md-4">
+        <h2>Recipies</h2>
+        <p>We have a ton of recipies that can get you going.  Use these ideas as a springboard to come up with your own recipies.  Who knows, you may be featured on our blog!</p>
+        <p><a class="btn btn-default" href="/" role="button">See recipies &raquo;</a></p>
       </div>
     </div>
 
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-      </div>
-
-      <hr>
-
-      <footer>
-        <p>&copy; 2015 Company, Inc.</p>
-      </footer>
-    </div> <!-- /container -->
-	
+  </div> <!-- /container -->
 {% endblock %}
