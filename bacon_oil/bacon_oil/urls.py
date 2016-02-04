@@ -26,6 +26,7 @@ urlpatterns = [
     url(r'^story/$', 'webapp.views.story'),
     url(r'^contact/$', 'webapp.views.contact'),
     url(r'^safety/$', 'webapp.views.safety'),
+    url(r'^blog/$', 'webapp.views.blog')
 ]
 
 urlpatterns += staticfiles_urlpatterns()

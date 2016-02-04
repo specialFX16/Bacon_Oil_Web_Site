@@ -45,3 +45,10 @@ def safety(request):
     """
 
     return render_to_response('safety.html', {}, RequestContext(request))
+
+def blog(request):
+    """
+    Controler for handleing the blog page
+    """
+
+    return render_to_response('blog.html', {}, RequestContext(request))
