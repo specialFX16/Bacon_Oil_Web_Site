@@ -3,16 +3,20 @@
 
 {% block body %}
  <!-- Main jumbotron for a primary marketing message or call to action --> 
-  <div class="jumbotron" style="background-image: url({% static 'images/fried_chicken.jpg' %}); width-max:400px; height-max:720px; ">
-    <div class="container">
-      <div class="well well-sm" style="background-color: rgba(0, 0, 0, 0.6);">
-        <h2 style="color:#FFFFFF">Welcome to Uncle John's Bacon Oil</h2>
-        <p style="color:#FFFFFF">Bacon oil is hands down the best way to enjoy any sort of fried food.  Explore our site to learn more about what makes our bacon oil special.  View our recipies to learn about the many different types of uses bacon oil can have.</p>
+ <div class="jubmbotron" style="margin-top:-20px; z-index:-1; ">
+  <div class="img-responsive" style="background: url({% static 'images/large_fried_chicken.jpg' %}) no-repeat center center; height:500px; background-size: cover;">
+      <div class="col-md-6"></div>
+      <div class="col-md-6" style="margin-top:200px;">
+        <div class="well well-sm" style="background-color: rgba(0, 0, 0, 0.6);">
+          <h2 style="color:#FFFFFF">Welcome to Uncle John's Bacon Oil</h2>
+          <p style="color:#FFFFFF">Bacon oil is hands down the best way to enjoy any sort of fried food.  Explore our site to learn more about what makes our bacon oil special.  View our recipies to learn about the many different types of uses bacon oil can have.</p>
+        </div>
+        <p><a class="btn btn-primary btn-lg" href="/story" role="button" padding="20px">Learn more &raquo;</a></p>
+        
       </div>
-      <p><a class="btn btn-primary btn-lg" href="/story" role="button" padding="20px">Learn more &raquo;</a></p>
-      
     </div>
   </div>
+</div>
 
   <div class="container">
     <!-- Example row of columns -->
