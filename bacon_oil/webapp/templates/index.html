@@ -8,14 +8,21 @@
   background: #2f4357;
 }
 
+img{
+  position:center;
+  height:500px;
 
+
+}
 
 {% endblock %}
+
+
 
 {% block body %}
  <!-- Main jumbotron for a primary marketing message or call to action --> 
 
-<div class="container" style="height:700px; margin:0px;">
+
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Carousel indicators -->
     <ol class="carousel-indicators">
@@ -24,15 +31,15 @@
         <li data-target="#myCarousel" data-slide-to="2"></li>
     </ol>   
     <!-- Wrapper for carousel items -->
-    <div class="carousel-inner">
+    <div class="carousel-inner" >
         <div class="item active">
-            <img src="{% static 'images/index_page/fried_chicken.jpg' %}" alt="First Slide">
+            <img src="{% static 'images/index_page/fried_chicken.jpg' %}" alt="My First Image" class="img-responsive" />
         </div>
         <div class="item">
-            <img src="{% static 'images/index_page/kitchen_fried.jpg' %}" alt="Second Slide">
+          <img src="{% static 'images/index_page/kitchen_fried.jpg' %}" alt="My First Image" class="img-responsive" />
         </div>
         <div class="item">
-            <img src="{% static 'images/index_page/meat_fried_food.jpg' %}" alt="Third Slide">
+          <img src="{% static 'images/index_page/meat_fried_food.jpg' %}" alt="My First Image" class="img-responsive"/>
         </div>
     </div>
     <!-- Carousel controls -->
@@ -43,7 +50,7 @@
         <span class="glyphicon glyphicon-chevron-right"></span>
     </a>
 </div>
-</div>
+
 
 
 
@@ -51,8 +58,8 @@
     <!-- Example row of columns -->
     <div class="row">
       <div class="col-md-4">
-        <h2>Learn about our product</h2>
-        <p>Uncle John's bacon oil is the most high quality bacon oil you can find.  Learn why our oil is so pure and why it is the best option to cook with. </p>
+        <h2>Learn about our story</h2>
+        <p>John Gordon's Bacon Oilis the most high quality bacon oil you can find.  Learn why our oil is so pure and why it is the best option to cook with. </p>
         <p><a class="btn btn-default" href="/story" role="button">View our story &raquo;</a></p>
       </div>
       <div class="col-md-4">

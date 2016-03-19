@@ -52,3 +52,10 @@ def blog(request):
     """
 
     return render_to_response('blog.html', {}, RequestContext(request))
+
+def product(request):
+    """
+    Controler for handleing the product page
+    """
+
+    return render_to_response('product.html', {}, RequestContext(request))
