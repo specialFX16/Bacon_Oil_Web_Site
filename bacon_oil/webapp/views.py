@@ -59,3 +59,10 @@ def product(request):
     """
 
     return render_to_response('product.html', {}, RequestContext(request))
+
+def recipes(request):
+    """
+    Controler for handleing the recipes page
+    """
+
+    return render_to_response('recipes.html', {}, RequestContext(request))

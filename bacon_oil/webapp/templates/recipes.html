@@ -1,0 +1,137 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block style %}
+body {
+  background-color:#e0e0e0;
+  -webkit-font-smoothing: antialiased;
+  font: normal 14px Roboto,arial,sans-serif;
+}
+
+
+
+hr {border-color:#ececec;}
+button {
+ outline: 0;
+}
+textarea {
+ resize: none;
+ outline: 0; 
+}
+.panel .btn i,.btn span{
+ color:#666666;
+}
+.panel .panel-heading {
+ background-color:#ffffff;
+ font-weight:700;
+ font-size:16px;
+ color:#262626;
+ border-color:#ffffff;
+}
+.panel .panel-heading a {
+ font-weight:400;
+ font-size:11px;
+}
+.panel .panel-default {
+ border-color:#cccccc;
+}
+.panel .panel-thumbnail {
+ padding:0;
+}
+.
+h3,h4,h5 { 
+ border:0 solid #efefef; 
+ border-bottom-width:1px;
+ padding-bottom:10px;
+}
+.modal-dialog {
+ width: 450px;
+}
+.modal-footer {
+ border-width:0;
+}
+.dropdown-menu {
+ background-color:#f4f4f4;
+ border-color:#f0f0f0;
+ border-radius:0;
+ margin-top:-1px;
+}
+/* end theme */
+
+/* template layout*/
+#subnav {
+ position:fixed;
+ width:100%;
+}
+
+@media (max-width: 768px) {
+ #subnav {
+  padding-top: 6px;
+ }
+}
+
+#main {
+ padding-top:120px;
+}
+{% endblock%}
+
+{% block body %}
+
+<div class="col-md-12" style="padding:50px; ">
+	<div class="row">
+
+	   <div class="col-md-6">
+	        <div class="panel panel-default">
+	          <div class="panel-heading"><h4>French Fries with Bacon Oil</h4></div>
+	   			<div class="panel-body">
+	   				<h5>Incredients</h5>
+	   				<p>
+	   					<br>Bacon oil
+	   					<br>French fries or cut potatoes
+	   					<br>Seasoning
+	   				</p>
+	   				<br>
+	   				<h5>Directions</h5>
+	   				<p>STEP 1. Set your cooking pot on the stove over medium heat.  Spoon in your bacon oil.  Allow to melt like butter</p>
+	   				<p>STEP 2. Insert your cooking thermometer.  Heat the bacon oil at medium until it reaches 300 degrees F.  Adjust the heat to keep it stable at that temperature</p>
+	   				<p>STEP 3. Sink a handful of fried into the oil.  Cover the top of the pot with your splash screen to protect yourself and the kitchen</p>
+	   				<p>STEP 4. Wait until the fries are golden brown -- about 2 to 3 mintues.  Remove using your tongs or spider</p>
+	   				<p>STEP 5. Set the finished fries on your papertowl to soak up the extra grease.  Sprinkle on the seasoning of your choice</p>
+	   				<p>STEP 6. Add more fried to your oil, cover with a splash screen, fry until gold brown, drain on papertowll, and season.  Continue doing this until you've cooked all your fries.  You can strain the bacon oil through a coffee filter if it starts to get dirty</p>
+	              
+
+	            </div>
+	   		</div>
+		</div>
+
+		<div class="col-md-6">
+	        <div class="panel panel-default">
+	          <div class="panel-heading"><h4>Bacon Oil Injection Recipe</h4></div>
+	   			<div class="panel-body">
+	   				<h5>Incredients</h5>
+	   				<p>
+	   					<br>2 sticks of butter
+	   					<br>1 and 1/2 cups of John Gordon's Bacon Oil
+	   					<br>1 tablespoon of Worcestershire sauce
+	   					<br>1-2 teaspoons of hot sauce to taste
+	   					<br>2 tablespoons of salt
+	   					<br>1 tablespoon of black pepper
+	   					<br>1/2 teaspoon of red pepper
+	   					<br>1/2 teaspoon of white pepper
+	   				</p>
+	   				<br>
+	   				<h5>Directions</h5>
+	   				<p>STEP 1. With the completely thawed turkey, inject liquid mixture into turkey making sure to get needle into the meat of the turkey.  Inject breast, thighs, legs and wings until all liquid mixture is used.</p>
+	   				<p>STEP 2. Heat oil to 375 degreese.  DO NOT HEAT ABOVE 400 DEGREES.  Maintain oil temperature at 350 degreese during frying process.  Deep fry turkey for 2 and 3/4 minutes for each pound of turkey weight.</p>
+	   				
+	              
+
+	            </div>
+	   		</div>
+		</div>
+
+
+	</div>
+</div>
+
+{% endblock %}
