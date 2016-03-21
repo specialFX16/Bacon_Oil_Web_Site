@@ -6,14 +6,23 @@
 .carousel{
   margin-top: -20px;
   background: #2f4357;
-}
-
-img{
-  position:center;
-  height:500px;
-
+  max-height:450px;
 
 }
+
+
+.ratio{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50% ; /* % of width, defines aspect ratio*/
+    
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;  
+}
+
+
 
 {% endblock %}
 
@@ -23,32 +32,40 @@ img{
  <!-- Main jumbotron for a primary marketing message or call to action --> 
 
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000" style="z-index:-1;">
     <!-- Carousel indicators -->
     <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
     </ol>   
+
+    
     <!-- Wrapper for carousel items -->
-    <div class="carousel-inner" >
+    <div class="carousel-inner" style="height:450px;">
         <div class="item active">
-            <img src="{% static 'images/index_page/fried_chicken.jpg' %}" alt="My First Image" class="img-responsive" />
+            <div class="ratio" style="background-image:url('{% static 'images/index_page/fried_chicken.jpg' %}');" />
+            </div> 
+            
         </div>
         <div class="item">
-          <img src="{% static 'images/index_page/kitchen_fried.jpg' %}" alt="My First Image" class="img-responsive" />
+          <div class="ratio" style="background-image:url('{% static 'images/index_page/kitchen_fried.jpg' %}');" />
+          </div> 
         </div>
         <div class="item">
-          <img src="{% static 'images/index_page/meat_fried_food.jpg' %}" alt="My First Image" class="img-responsive"/>
+          <div class="ratio" style="background-image:url('{% static 'images/index_page/meat_fried_food.jpg' %}');" />
+          </div>
         </div>
     </div>
     <!-- Carousel controls -->
+    <!--
     <a class="carousel-control left" href="#myCarousel" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left"></span>
     </a>
     <a class="carousel-control right" href="#myCarousel" data-slide="next">
         <span class="glyphicon glyphicon-chevron-right"></span>
     </a>
+  -->
 </div>
 
 
@@ -68,8 +85,8 @@ img{
         <p><a class="btn btn-default" href="/safety" role="button">Safety tips &raquo;</a></p>
      </div>
       <div class="col-md-4">
-        <h2>Recipies</h2>
-        <p>We have a ton of recipies that can get you going.  Use these ideas as a springboard to come up with your own recipies.  Who knows, you may be featured on our blog!</p>
+        <h2>Recipes</h2>
+        <p>We have a ton of recipes that can get you going.  Use these ideas as a springboard to come up with your own recipes.  Who knows, you may be featured on our blog!</p>
         <p><a class="btn btn-default" href="/recipes" role="button">See recipies &raquo;</a></p>
       </div>
     </div>
