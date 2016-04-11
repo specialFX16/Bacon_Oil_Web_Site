@@ -66,3 +66,10 @@ def recipes(request):
     """
 
     return render_to_response('recipes.html', {}, RequestContext(request))
+
+def store(request):
+    """
+    Controler for handleing the store page
+    """
+
+    return render_to_response('store.html', {}, RequestContext(request))
